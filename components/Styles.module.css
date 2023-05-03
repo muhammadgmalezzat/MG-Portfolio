@@ -1,0 +1,47 @@
+.bbody::before {
+    content: '<body>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+    
+}
+.bh1::before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+}
+.ah1::after {
+    content: '</h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+}
+.bh2::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+
+}
+.ah2::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+    
+}
+.bp::before {
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+    
+}
+.ap::after {
+    content: '</p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+    
+}

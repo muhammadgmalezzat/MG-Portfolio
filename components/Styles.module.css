@@ -5,6 +5,18 @@
     font-size: 15px;
     
 }
+.bsec::before{
+    content: '<section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+}
+.asec::after {
+    content: '</section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 15px;
+}
 .bh1::before {
     content: '<h1>';
     font-family: 'La Belle Aurore',cursive;
@@ -44,4 +56,63 @@
     color: #515152;
     font-size: 15px;
     
+}
+.navbar{
+    background-color: transparent;
+    background-color: #2D3250;
+    opacity: .95;
+
+
+    /* filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px); */
+}
+
+.beforeSymbol{
+    content: '<';
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #515152;
+    font-size: 17px;
+    
+}
+/* About Section */
+.iconbox {
+  padding: 10px;
+}
+.skillstitle{
+    color:#F8B179;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:40px ;
+    font-size: 30px;
+    border-color: #F8B179;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+.button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    
+}
+.button:hover{
+    background-color: #F8B179;
+    color: #2D3250;
+    
+}
+
+.iconbox p{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+color: #F8B179;
+margin-top: 10px;
+}
+
+.icon{
+color: #F8B179;
+    font-size: 50px;
+text-align: center;
 }

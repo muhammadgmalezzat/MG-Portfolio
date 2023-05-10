@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Styles.module.css'
 
 const SectionTitle = ({title,titlenumber}) => {
     return (
-        <h2 className='font-titleFont text-2xl font-semibold flex items-center '>
+        <h2 className={`font-titleFont text-3xl font-semibold  flex-col  ${styles.bh1} ${styles.ah1}`}>
             <span className='text-base md:text-lg text-textGreen mr-2 '>{titlenumber}</span>
             {" "}
             {title}

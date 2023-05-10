@@ -16,11 +16,27 @@ function Archieve() {
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10'>
 
                 <ArchiveCard
-                    title={"Cyber Security Blog with live comments section"}
-                    description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium velit qui sint non, voluptates quo a veritatis."}
-                    listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-                    link={"https://localhost:3000"}
+                    title={"E-commerce Watch Website"}
+                    description={"an E-commerce Website. where you can buy Branded watches."}
+                    listItem={["HTML","CSS","JavaScript","Bootstrap"]}
+                    link={"https://muhammadgmalezzat.github.io/E-commerce_Watch_website/"}
                 />
+
+                <ArchiveCard
+                                    title={"services website Fiction-website "}
+                                    description={"services website built with HTML ,CSS ,Bootstrap and JavaScript."}
+                                    listItem={["HTML","CSS","JavaScript","Bootstrap"]}
+                                    link={"https://muhammadgmalezzat.github.io/fiction-website-/"}
+                />
+                <ArchiveCard
+                                    title={"Gym Exercises Application "}
+                                    description={"Website for Exploreing GYM exercises and choose exercise by body part (muscle)"}
+                                    listItem={["HTML","CSS","JavaScript","react","material UI","Rabid API"]}
+                                    link={"https://www.youtube.com/watch?v=IWMi91jJkA8&feature=youtu.be"}
+                />
+                
+                
+
                 {
                     showMore && (
                         <>
@@ -30,10 +46,10 @@ function Archieve() {
                                 transition={{duration: .1 }}
                             >
                                 <ArchiveCard
-                                    title={"Cyber Security Blog with live comments section"}
-                                    description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium velit qui sint non, voluptates quo a veritatis."}
-                                    listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-                                    link={"https://localhost:3000"}
+                                    title={"Gym Exercises Application "}
+                                    description={"Website for Exploreing GYM exercises and choose exercise by body part (muscle)"}
+                                    listItem={["HTML","CSS","JavaScript","react","material UI","Rabid API"]}
+                                    link={"https://www.youtube.com/watch?v=IWMi91jJkA8&feature=youtu.be"}
                                 />
                             </motion.div>
                         </>

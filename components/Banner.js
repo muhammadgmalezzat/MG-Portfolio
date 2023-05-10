@@ -4,8 +4,8 @@ import styles from './Styles.module.css'
 const Banner = () => {
     return (
         <section
-            id="home"
-            className={`max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-4 mdl:px-10 xl:px-4 ${styles.bbody}`}
+            id="Home"
+            className={`max-w-contentContainer mx-auto py-5 mdl:py-12 flex flex-col gap-4 lgl:gap-4 mdl:px-5 xl:px-4 ${styles.bbody}`}
         >
 
                 <motion.h3
@@ -25,7 +25,7 @@ const Banner = () => {
             >
                 I'm Muhammad Gmal.{" "}
                 <span className="text-textDark mt-2 lgl:mt-4">
-                    I build things for the web.
+                    I am Software Engineer.
                 </span>
             </motion.h1>
             <motion.p

@@ -5,7 +5,8 @@ import {
     SlSocialInstagram,
     SlSocialGithub,
     SlSocialBehance
-} from 'react-icons/sl'
+} from 'react-icons/sl';
+import Image from "next/image";
 const LeftSide = () => {
     return (
         <div className='w-full h-full flex flex-col items-center justify-end gap-4 text-textLight'>
@@ -32,7 +33,12 @@ const LeftSide = () => {
                 </a>
                 <a href='https://www.behance.net/muhammad12' target="_blank">
                     <span className='w-10 h-10 bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
-                        <SlSocialBehance />
+                        <Image
+                            src="/assets/images/leetcode2.png"
+                            width={25}
+                            height={25}
+                        />
+
                     </span>
                 </a>
             </div>

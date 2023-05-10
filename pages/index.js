@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>MG' Portfolio</title>
+        <title>MG&#39; Portfolio</title>
         <meta name="description" content="portfolio" />
         <link rel='icon' href='/assets/images/logo.png' />
       </Head>

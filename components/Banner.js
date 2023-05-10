@@ -23,7 +23,7 @@ const Banner = () => {
                 transition={{ duration: .5, delay: .8 }}
                 className={`text-4xl mdl:text-6xl lgl:text-7xl font-titleFont font-semibold flex flex-col ${styles.bh2} ${styles.ah2}`}
             >
-                I'm Muhammad Gmal.{" "}
+                I am Muhammad Gmal.
                 <span className="text-textDark mt-2 lgl:mt-4">
                     I am Software Engineer.
                 </span>

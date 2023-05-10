@@ -37,6 +37,7 @@ const LeftSide = () => {
                             src="/assets/images/leetcode2.png"
                             width={25}
                             height={25}
+                            alt="leetcode"
                         />
 
                     </span>

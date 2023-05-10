@@ -82,7 +82,7 @@ const Navbar = () => {
                                 initial={{ x: 2, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ duration: .1 }}
-                                className="w-[60%] h-screen overflow-y-scroll scrollbarHide bg-[#2D3250] rounded flex flex-col items-center px-4 py-10 relative"
+                                className="w-[90%] h-screen overflow-y-scroll scrollbarHide bg-[#2D3250] rounded flex flex-col items-center px-4 py-10 relative"
                             >
                                 <MdOutlineClose
                                     onClick={() => setshowMenu(false)}

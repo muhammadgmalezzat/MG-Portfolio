@@ -27,7 +27,7 @@ const Projects = () => {
                 />
 
                 <Project
-                    projectLink={"https://muhammadgmalezzat.github.io/Stella-Orre-architecture/"}
+                    projectLink={"https://burger-delievery.vercel.app/"}
                     imgSrc="/assets/images/burger.jpg"
                     imgAlt="Burger Delievery"
                     projectTitle={"Burger Delievery"}

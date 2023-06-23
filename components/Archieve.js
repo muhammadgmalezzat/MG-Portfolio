@@ -14,7 +14,12 @@ function Archieve() {
                 <p className="text-sm font-titleFont text-textGreen">view the archive</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10'>
-
+                <ArchiveCard
+                                    title={"My Reads Application "}
+                                    description={"A project for Udacity's Front-End Nanodegree program"}
+                                    listItem={["HTML","CSS","JavaScript","react","material UI"]}
+                                    link={"https://github.com/muhammadgmalezzat/My-Reads-React-app"}
+                                />
                 <ArchiveCard
                     title={"E-commerce Watch Website"}
                     description={"an E-commerce Website. where you can buy Branded watches."}
@@ -22,17 +27,12 @@ function Archieve() {
                     link={"https://muhammadgmalezzat.github.io/E-commerce_Watch_website/"}
                 />
 
-                <ArchiveCard
-                                    title={"services website Fiction-website "}
-                                    description={"services website built with HTML ,CSS ,Bootstrap and JavaScript."}
-                                    listItem={["HTML","CSS","JavaScript","Bootstrap"]}
-                                    link={"https://muhammadgmalezzat.github.io/fiction-website-/"}
-                />
+                
                 <ArchiveCard
                                     title={"Gym Exercises Application "}
                                     description={"Website for Exploreing GYM exercises and choose exercise by body part (muscle)"}
                                     listItem={["HTML","CSS","JavaScript","react","material UI","Rabid API"]}
-                                    link={"https://www.youtube.com/watch?v=IWMi91jJkA8&feature=youtu.be"}
+                                    link={"https://github.com/muhammadgmalezzat/GYM-Exercises-React_app"}
                 />
                 
                 
@@ -45,12 +45,13 @@ function Archieve() {
                                 animate={{ opacity: 1 }}
                                 transition={{duration: .1 }}
                             >
+                                
                                 <ArchiveCard
-                                    title={"Gym Exercises Application "}
-                                    description={"Website for Exploreing GYM exercises and choose exercise by body part (muscle)"}
-                                    listItem={["HTML","CSS","JavaScript","react","material UI","Rabid API"]}
-                                    link={"https://www.youtube.com/watch?v=IWMi91jJkA8&feature=youtu.be"}
-                                />
+                                    title={"services website Fiction-website "}
+                                    description={"services website"}
+                                    listItem={["HTML","CSS","JavaScript","Bootstrap"]}
+                                    link={"https://muhammadgmalezzat.github.io/fiction-website-/"}
+                />
                             </motion.div>
                         </>
                     )

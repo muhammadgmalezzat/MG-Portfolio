@@ -52,7 +52,7 @@ const Navbar = () => {
                         <Navitem name={"Projects"} delay={".3"}/>
                         <Navitem name={"Contact"} delay={".4"}/>
                     </ul>
-                    <a href="/assets/Muhammed_Gmal_Resume.pdf" target="_blank">
+                    <a href="/assets/Muhammad_Gmal_Resume.pdf" target="_blank">
                         <motion.button
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}

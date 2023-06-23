@@ -29,12 +29,12 @@ const About = () => {
                             
                     </a>
                 </div>
-                <div className="w-full lgl:w-1/3 h-80 relative group">
+                <div className="w-full lgl:w-1/3 h-80 relative group hidden lg:block">
                     <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg ">
-                        <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
+                        <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0 ">
                             <Image
-                                className="rounded-lg h-full object-vover"
-                                src="/assets/images/black.jpg"
+                                className="rounded-lg h-full object-vover "
+                                src="/assets/images/3.jpg"
                                 width={300}
                                 height={300}
                                 alt="profile picture"

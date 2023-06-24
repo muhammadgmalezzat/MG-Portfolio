@@ -97,7 +97,7 @@ const Navbar = () => {
                                         <NavItemMobile name={"Contact"} handleSroll={ handleSroll}delay={".4" }/>
                                     </ul>
 
-                                    <a href="/assets/Muhammed_Gmal_Resume.pdf" target="_blank">
+                                    <a href="/assets/Muhammad_Gmal_Resume.pdf" target="_blank">
                                         <motion.button
                                             initial={{  opacity: 0 }}
                                             animate={{  opacity: 1 }}

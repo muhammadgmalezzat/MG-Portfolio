@@ -22,7 +22,7 @@ const Projects = () => {
                     projectTitle={"FUDO"}
                     projrctDescription={"Full Stack Food Delivery React Application."}
                     skills={["React","Redux","Tailwind","Authentication","Framer motion","FireBase"]}
-                    //youtubeLink={"https://www.youtube.com/watch?v=jN2BAbGB3NQ&t=2s"}
+                    youtubeLink={"https://www.youtube.com/watch?v=WTzLFDL2F_A"}
                     githubLink={"https://github.com/muhammadgmalezzat/FoodDelivery"}
                     reverse={true}
                 />

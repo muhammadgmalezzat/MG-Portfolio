@@ -5,10 +5,10 @@ import { RxOpenInNewWindow } from 'react-icons/rx'
 import Link from 'next/link';
 const Project = ({ projectLink, projrctDescription, imgSrc, imgAlt, projectTitle, skills, youtubeLink, githubLink, reverse }) => {
     // Split the description string into bullet points using "-"
-  const bulletPoints = (projrctDescription || '')
-    .split('-')
-    .map((item) => item.trim())
-    .filter((item) => item); // remove empty strings
+  const bulletPoints = projrctDescription
+        ? projrctDescription.split('-').map((item) => item.trim()).filter((item) => item)
+        : [];
+    const skillList = Array.isArray(skills) ? skills.map(skill => skill.trim()) : [];// remove empty strings
     
     const clas = reverse ? 'flex flex-col xl:flex-row-reverse gap-6' : "flex flex-col xl:flex-row gap-6";
     const clasText= reverse ? 'bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md ' : 'bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md';
@@ -43,7 +43,7 @@ const Project = ({ projectLink, projrctDescription, imgSrc, imgAlt, projectTitle
 
                 {/* Skills */}
                 <div className="flex flex-wrap gap-2 mb-4">
-                    {skills.map((skill, index) => (
+                    {skillList.map((skill, index) => (
                         <span
                             key={index}
                             className="bg-textGreen text-sm text-[#2d3250] px-3 py-1 rounded-full"

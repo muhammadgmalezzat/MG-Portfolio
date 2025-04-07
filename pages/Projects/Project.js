@@ -5,7 +5,7 @@ import { RxOpenInNewWindow } from 'react-icons/rx'
 import Link from 'next/link';
 const Project = ({ projectLink, projrctDescription, imgSrc, imgAlt, projectTitle, skills, youtubeLink, githubLink, reverse }) => {
     // Split the description string into bullet points using "-"
-  const bulletPoints = projrctDescription
+  const bulletPoints = (projrctDescription || '')
     .split('-')
     .map((item) => item.trim())
     .filter((item) => item); // remove empty strings

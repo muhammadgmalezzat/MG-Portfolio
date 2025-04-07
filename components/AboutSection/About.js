@@ -16,17 +16,18 @@ const About = () => {
                     className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4"
                 >
                     <p className={`${styles.bp}  ${styles.ap}  flex-col flex`}>
-                        I am a Fron-end developer gained +1 of experience in frontend development by completing several projects using HTML, CSS, and JavaScript.
-                        <br/> <br/>Additionally, I have experience using React and nextjs framework to develop responsive and user-friendly websites.I have also worked collaboratively with other developers to develop web applications that meet client requirements and user needs.I have a strong foundation in front-end development and am skilled in creating user-friedly and responsive web applications using react and its ecosystem. 
+                        I’m a Front-End Developer with over a year of experience building responsive, user-friendly web applications. I specialize in React, Next.js, Redux, Tailwind CSS, Firebase, and MUI.
+                        <br /> <br />Additionally, I have experience using Node JS and Mongo DB to develop Fullstack websites.I have also worked collaboratively with other developers to develop web applications that meet client requirements and user needs.
+                        
+                        <br/><br/>
+                        I have a strong interest in problem-solving, data structures, and algorithms, and regularly solve problems on LeetCode to sharpen my skills. I focus on creating fast, scalable, and SEO-friendly applications, while delivering clean, maintainable code. 
+                        <br/>
                     </p>
-                    <a href="https://my-blog-website-ten.vercel.app/" target="_blank">
+                    <a href="https://mg-blog-sigma.vercel.app/" target="_blank">
                         <button className={`w-52 h-14 text-sm border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300 ${styles.button}`} >Check out my Blog
                             
                             
                         </button>
-                        
-                                
-                            
                     </a>
                 </div>
                 <div className="w-full lgl:w-1/3 h-80 relative group hidden lg:block">
@@ -34,7 +35,7 @@ const About = () => {
                         <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0 ">
                             <Image
                                 className="rounded-lg h-full object-vover "
-                                src="/assets/images/3.jpg"
+                                src="/assets/images/eee.jpg"
                                 width={300}
                                 height={300}
                                 alt="profile picture"

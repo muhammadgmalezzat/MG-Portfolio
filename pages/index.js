@@ -5,8 +5,8 @@ import RightSide from '@/components/RightSide'
 import { motion } from 'framer-motion'
 import Banner from '@/components/Banner'
 import About from '@/components/AboutSection/About'
-//import Experience from '@/components/Experience'
-import Projects from '@/components/ProjectsSection/Projects'
+import Experience from '@/components/Experience'
+import Projects from '@/pages/Projects'
 import Archieve from '@/components/Archieve'
 import { Contact } from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -34,9 +34,9 @@ export default function Home() {
           <div className='h-[88vh] w-full mx-auto p-4'>
             <Banner />
             <About />
-            {/* <Experience /> */}
+            <Experience />
             <Projects />
-            <Archieve />
+            {/* <Archieve /> */}
             <Contact />
             <Footer />
 

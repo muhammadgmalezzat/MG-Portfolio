@@ -29,7 +29,7 @@ const Experience = () => {
     return (
         <section
             id='experience'
-            className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
+            className="max-w-container mx-auto lgl:px-20 py-24"
         >
             <SectionTitle title={"where i have worked"} titlenumber="02." />
             <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
@@ -40,9 +40,9 @@ const Experience = () => {
                             border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
                     onClick={handleFirst}
                     >
-                        React
+                        Internship
                     </li>
-                    <li className={`${worksecond ?
+                    {/* <li className={`${worksecond ?
                             "border-l-textGreen text-textGreen" :
                             "text-textDark border-l-hoverColor"}
                             border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
@@ -57,12 +57,12 @@ const Experience = () => {
                     onClick={handleThired}
                     >
                         React
-                    </li>
+                    </li> */}
                     
                 </ul>
                 {workFirst && <First />}
-                {worksecond && <Second />}
-                {workthired && <Thired/>}
+                {/* {worksecond && <Second />}
+                {workthired && <Thired/>} */}
                 
             </div>
         </section>

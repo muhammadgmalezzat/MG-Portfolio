@@ -31,7 +31,7 @@ const LeftSide = () => {
                         <SlSocialInstagram />
                     </span>
                 </a>
-                <a href='https://www.behance.net/muhammad12' target="_blank">
+                <a href='https://leetcode.com/u/muhammad_gmal/' target="_blank">
                     <span className='w-10 h-10 bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300'>
                         <Image
                             src="/assets/images/leetcode2.png"

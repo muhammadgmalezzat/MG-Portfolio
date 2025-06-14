@@ -34,8 +34,9 @@ const EnglishExpress = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Implemented a real-time contextual chat system "Ask the Teacher"
-          linked to sub-questions, using REST APIs and custom routing logic.
+          Implemented a real-time contextual chat system &quot; Ask the Teacher
+          &quot; linked to sub-questions, using REST APIs and custom routing
+          logic.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">

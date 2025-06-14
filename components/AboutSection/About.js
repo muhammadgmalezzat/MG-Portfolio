@@ -13,7 +13,7 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p className={`${styles.bp}  ${styles.ap}  flex-col flex`}>
-            I'm a Full-Stack Developer with over a year of hands-on experience
+            I am a Full-Stack Developer with over a year of hands-on experience
             building scalable web applications using the MERN stack.
             <br />
             <br />

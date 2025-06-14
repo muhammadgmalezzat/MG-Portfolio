@@ -1,72 +1,70 @@
-import SectionTitle from '@/components/SectionTitle';
-import First from '@/components/Works/first';
-import Second from '@/components/Works/second';
-import Thired from '@/components/Works/thired';
-import { useState } from 'react';
+import SectionTitle from "@/components/SectionTitle";
+import Codsoft from "@/components/Works/Codsoft";
+import Jeetroom from "@/components/Works/Jeetroom";
+import EnglishExpress from "@/components/Works/EnglishExpress";
+import { useState } from "react";
 
 const Experience = () => {
-    const [workFirst, setworkFirst] = useState(true)
-    const [worksecond, setworksecond] = useState(false)
-    const [workthired, setworkthired] = useState(false)
+  const [activeTab, setActiveTab] = useState("engexp");
 
-    const handleFirst = ()=> {
-        setworkFirst(true)
-        setworksecond(false)
-        setworkthired(false)
+  const renderContent = () => {
+    switch (activeTab) {
+      case "codsoft":
+        return <Codsoft />;
+      case "jeetroom":
+        return <Jeetroom />;
+      case "engexp":
+        return <EnglishExpress />;
+      default:
+        return null;
     }
-    const handleSecond = ()=> {
-        setworkFirst(false)
-        setworksecond(true)
-        setworkthired(false)
-    }
-    const handleThired = ()=> {
-        setworkFirst(false)
-        setworksecond(false)
-        setworkthired(true)
-    }
+  };
 
+  return (
+    <section
+      id="experience"
+      className="max-w-container mx-auto lgl:px-20 py-24"
+    >
+      <SectionTitle title="Where I Have Worked" titlenumber="02." />
+      <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
+        <ul className="md:w-32 flex lgl:flex-col md:flex-col sm:flex-row">
+          <li
+            className={`${
+              activeTab === "engexp"
+                ? "border-l-textGreen text-textGreen"
+                : "text-textDark border-l-hoverColor"
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+            onClick={() => setActiveTab("engexp")}
+          >
+            English Express
+          </li>
 
-    return (
-        <section
-            id='experience'
-            className="max-w-container mx-auto lgl:px-20 py-24"
-        >
-            <SectionTitle title={"where i have worked"} titlenumber="02." />
-            <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
-                <ul className='md:w-32 flex lgl:flex-col md:flex-col sm:flex-row'>
-                    <li className={`${workFirst ?
-                            "border-l-textGreen text-textGreen " :
-                            "text-textDark border-l-hoverColor"}
-                            border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-                    onClick={handleFirst}
-                    >
-                        Internship
-                    </li>
-                    {/* <li className={`${worksecond ?
-                            "border-l-textGreen text-textGreen" :
-                            "text-textDark border-l-hoverColor"}
-                            border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-                    onClick={handleSecond}
-                    >
-                        React
-                    </li>
-                    <li className={`${workthired ?
-                            "border-l-textGreen text-textGreen" :
-                            "text-textDark border-l-hoverColor"}
-                            border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-                    onClick={handleThired}
-                    >
-                        React
-                    </li> */}
-                    
-                </ul>
-                {workFirst && <First />}
-                {/* {worksecond && <Second />}
-                {workthired && <Thired/>} */}
-                
-            </div>
-        </section>
-    );
-}
+          <li
+            className={`${
+              activeTab === "jeetroom"
+                ? "border-l-textGreen text-textGreen"
+                : "text-textDark border-l-hoverColor"
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+            onClick={() => setActiveTab("jeetroom")}
+          >
+            Jeetroom
+          </li>
 
-export default Experience
+          <li
+            className={`${
+              activeTab === "codsoft"
+                ? "border-l-textGreen text-textGreen"
+                : "text-textDark border-l-hoverColor"
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+            onClick={() => setActiveTab("codsoft")}
+          >
+            Codsoft
+          </li>
+        </ul>
+        <div className="flex-1">{renderContent()}</div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;

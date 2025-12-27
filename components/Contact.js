@@ -1,20 +1,41 @@
-import React from 'react'
-
+import React from "react";
+import { motion } from "framer-motion";
 export const Contact = () => {
-    return (
-        <section id="Contact" className="max-w-contentContainer mx-auto py-10 xl:py-32 flex flex-col gap-4 items-center justify-center">
-            <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">04. What’s Next?</p>
+  return (
+    <motion.section
+      id="Contact"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="max-w-containerSmall mx-auto py-16 mdl:py-24 px-4 flex flex-col items-center gap-6 text-center"
+    >
+      {/* Section Number */}
+      <p className="text-sm md:text-base text-textGreen font-mono">
+        04. What's Next?
+      </p>
 
-            <h2 className="font-titleFont text-5xl font-semibold">Get In Touch</h2>
+      {/* Title */}
+      <h2 className="text-3xl md:text-5xl font-bold text-textLight">
+        Get In Touch
+      </h2>
 
-            <p className="max-w-[600px] text-center text-textDark">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+      {/* Description */}
+      <p className="text-sm md:text-base max-w-md text-textDark leading-relaxed">
+        My inbox is always open. Whether you have a question, opportunity, or
+        just want to say hi, I'll get back to you!
+      </p>
 
-            <a href="mailto:muhammadgmal320@gmail.com">
-
-                <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
-                    Say Hello
-                </button>
-            </a>
-        </section>
-    );
-}
+      {/* Button */}
+      <a href="mailto:muhammadgmal320@gmail.com">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="mt-4 px-6 py-3 md:px-8 md:py-4 border-2 border-textGreen text-textGreen rounded-md hover:bg-hoverColor transition-all duration-300 text-sm md:text-base font-medium"
+        >
+          Say Hello
+        </motion.button>
+      </a>
+    </motion.section>
+  );
+};

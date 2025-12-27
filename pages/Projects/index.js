@@ -1,109 +1,73 @@
-import Image from 'next/image';
-import SectionTitle from '../../components/SectionTitle';
-import { AiOutlineYoutube } from 'react-icons/ai'
-import { TbBrandGithub } from 'react-icons/tb'
-import { RxOpenInNewWindow } from 'react-icons/rx'
-import Project from './Project';
+import Image from "next/image";
+import SectionTitle from "../../components/SectionTitle";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { TbBrandGithub } from "react-icons/tb";
+import { RxOpenInNewWindow } from "react-icons/rx";
+import Project from "./Project";
 
 const Projects = () => {
-    return (
-      <section
-        id="Projects"
-        className="max-w-container mx-auto lgl:px-20 py-24 "
-      >
-        <SectionTitle title={"Projects I have Built"} titlenumber={"03."} />
+  return (
+    <section id="Projects" className="max-w-container mx-auto lgl:px-20 py-24 ">
+      <SectionTitle title={"Projects I have Built"} titlenumber={"02."} />
 
-        <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
-          <Project
-            projectLink={"https://github.com/muhammadgmalezzat/DocBook-"}
-            imgSrc="/assets/images/doc.jpg"
-            imgAlt="Doctor Appointment Booking System"
-            projectTitle={"Doctor Appointment Booking System"}
-            projrctDescription={
-              "-A full featured booking platform with dashboards for patients, doctors, and admins. -Built secure JWT + Refresh Token auth and custom role based access control. -Integrated doctor availability management and email notifications. - Features search, filters, appointment history, and cancellation rules ."
-            }
-            skills={[
-              "React",
-              "Node.js",
-              "Express",
-              "MongoDB",
-              "JWT",
-              "Mailjet",
-            ]}
-            //youtubeLink={"https://www.youtube.com/watch?v=WTzLFDL2F_A"}
-            githubLink={"https://github.com/muhammadgmalezzat/DocBook-"}
-            reverse={true}
-          />
+      <div className="w-full flex flex-col items-center justify-center gap-16 md:gap-24 mt-8 md:mt-10">
+        {/* Project 1: Doctor Appointment System */}
+        <Project
+          projectLink="https://github.com/muhammadgmalezzat/DocBook-"
+          imgSrc="/assets/images/doc.jpg"
+          imgAlt="Doctor Appointment Booking System"
+          projectTitle="Doctor Appointment System"
+          projrctDescription="-Fullstack booking platform with role based dashboards (patients, doctors, admins). -Built JWT + refresh token auth with custom RBAC. -Integrated doctor availability, email notifications, appointment history, and cancellation rules."
+          skills={["React", "Node.js", "Express", "MongoDB", "JWT", "Mailjet"]}
+          githubLink="https://github.com/muhammadgmalezzat/DocBook-"
+          reverse={true}
+        />
 
-          <Project
-            projectLink={"https://food-delivery-ashy.vercel.app/"}
-            imgSrc="/assets/images/2.png"
-            imgAlt="furniture website"
-            projectTitle={"FUDO"}
-            projrctDescription={
-              "-Developed a dynamic web application using React.js, Redux, and Firebase with Google Authentication for secure user access.-Implemented features allowing users to browse meals, add items to the cart, and manage orders .-Integrated Tailwind CSS and MUI for a responsive and visually appealing user interface.-Designed admin functionality for adding and managing meals stored in Firebase."
-            }
-            skills={[
-              "React",
-              "Redux",
-              "Tailwind",
-              "Authentication",
-              "Framer motion",
-              "FireBase",
-            ]}
-            youtubeLink={"https://www.youtube.com/watch?v=WTzLFDL2F_A"}
-            githubLink={"https://github.com/muhammadgmalezzat/FoodDelivery"}
-            reverse={false}
-          />
-          <Project
-            projectLink={
-              "https://github.com/muhammadgmalezzat/Fullstack-Watch-Shop"
-            }
-            imgSrc="/assets/images/watch.jpg"
-            imgAlt="watch website"
-            projectTitle={"TimeZone E-commerce"}
-            projrctDescription={
-              "- Developed a Fullstack Ecommerce website using Express, MongoDB, and MVC architecture, with dynamic routing and modular code structure.- Implemented secure authentication and authorization using tokens, encrypted passwords, protected routes, and CSRF protection.- Integrated Mailjet for automated emails and Stripe for secure online payment processing.- Built a responsive frontend with HTML, CSS, and Bootstrap, and enhanced UX with form validation,and session management."
-            }
-            skills={[
-              "Express.js",
-              "MongoDB",
-              "Stripe",
-              "pagination",
-              "authentication",
-              "mailjet",
-            ]}
-            youtubeLink={""}
-            githubLink={
-              "https://github.com/muhammadgmalezzat/Fullstack-Watch-Shop"
-            }
-            reverse={true}
-          />
+        {/* Project 2: E-commerce Platform */}
+        <Project
+          projectLink="https://github.com/muhammadgmalezzat/Fullstack-Watch-Shop"
+          imgSrc="/assets/images/watch.jpg"
+          imgAlt="E-commerce Platform"
+          projectTitle="E-commerce Platform"
+          projrctDescription="-Fullstack online store using Express, MongoDB (MVC architecture). -Implemented token based auth with hashed passwords and CSRF protection. -Integrated Mailjet for emails and Stripe for payments. -Built session based cart and secure checkout."
+          skills={["Express", "MongoDB", "Stripe", "Authentication", "Mailjet"]}
+          githubLink="https://github.com/muhammadgmalezzat/Fullstack-Watch-Shop"
+          reverse={false}
+        />
 
-          <Project
-            projectLink={"https://github-clone-4c4a3.web.app/home"}
-            imgSrc="/assets/images/codepen.jpg"
-            imgAlt="CodePin Clone"
-            projectTitle={"CodePin Clone"}
-            projrctDescription={
-              "- Developed a Realtime code editor using React.js, Redux, and Firebase, featuring user authentication and project management.- Enabled users to create customizable code projects (pens) with HTML, CSS, and JavaScript, including live preview functionality.- Integrated Code Mirror, React Split Pane, and React Loader Spinner for a seamless and interactive coding experience.- Designed a fully responsive UI with Tailwind CSS and MUI, and implemented search functionality by keywords and tags for better project discovery."
-            }
-            skills={[
-              "React.js",
-              "Redux",
-              "Authentication",
-              "material-UI",
-              "FireBase ",
-              "Code Mirror",
-            ]}
-            youtubeLink={
-              "https://www.youtube.com/watch?v=31zRZG7TaO0&feature=youtu.be"
-            }
-            githubLink={"https://github.com/muhammadgmalezzat/CodePen-Clone"}
-            reverse={false}
-          />
+        {/* Project 3: Real-Time Code Editor */}
+        <Project
+          projectLink="https://github-clone-4c4a3.web.app/home"
+          imgSrc="/assets/images/codepen.jpg"
+          imgAlt="Real-Time Code Editor"
+          projectTitle="Real-Time Code Editor"
+          projrctDescription="-Live code editor with React, Redux, and Firebase. Features user auth, project management, and real time HTML/CSS/JS preview. -Used CodeMirror for tabbed editing, search by tags, and user dashboard."
+          skills={[
+            "React",
+            "Redux",
+            "Firebase",
+            "CodeMirror",
+            "Authentication",
+          ]}
+          youtubeLink="https://www.youtube.com/watch?v=31zRZG7TaO0&feature=youtu.be"
+          githubLink="https://github.com/muhammadgmalezzat/CodePen-Clone"
+          reverse={true}
+        />
 
-          <Project
+        {/* Project 4: Food Delivery Platform */}
+        <Project
+          projectLink="https://food-delivery-ashy.vercel.app/"
+          imgSrc="/assets/images/2.png"
+          imgAlt="Food Delivery Platform"
+          projectTitle="Food Delivery Platform"
+          projrctDescription="-Dynamic ordering app with Google Auth and admin dashboard. -Users browse meals, manage cart, and place orders. -Admins add/edit meals in Firebase. -Built with React, Redux, Tailwind, and MUI."
+          skills={["React", "Redux", "Tailwind", "Firebase", "Google Auth"]}
+          youtubeLink="https://www.youtube.com/watch?v=WTzLFDL2F_A"
+          githubLink="https://github.com/muhammadgmalezzat/FoodDelivery"
+          reverse={false}
+        />
+
+        {/* <Project
             projectLink={"https://mg-blog-sigma.vercel.app/"}
             imgSrc="/assets/images/blog1.jpg"
             imgAlt="Notion-Powered Blog Platform"
@@ -121,9 +85,9 @@ const Projects = () => {
             youtubeLink={""}
             githubLink={"https://github.com/muhammadgmalezzat/My-Blog-website"}
             reverse={true}
-          />
+          /> */}
 
-          <Project
+        {/* <Project
             projectLink={"https://burger-delievery.vercel.app/"}
             imgSrc="/assets/images/burger.jpg"
             imgAlt="Burger Delievery"
@@ -141,9 +105,9 @@ const Projects = () => {
             youtubeLink={"https://www.youtube.com/watch?v=7nq9xebmk40"}
             githubLink={"https://github.com/muhammadgmalezzat/Burger-Delievery"}
             reverse={false}
-          />
+          /> */}
 
-          <Project
+        {/* <Project
             projectLink={
               "https://github.com/muhammadgmalezzat/Gym-Exercises-App"
             }
@@ -157,9 +121,9 @@ const Projects = () => {
             youtubeLink={"https://www.youtube.com/watch?v=7nq9xebmk40"}
             githubLink={"https://github.com/muhammadgmalezzat/Burger-Delievery"}
             reverse={true}
-          />
+          /> */}
 
-          <Project
+        {/* <Project
             projectLink={"https://listify-todo-list.vercel.app/"}
             imgSrc="/assets/images/todo.jpg"
             imgAlt="todo list website"
@@ -180,9 +144,9 @@ const Projects = () => {
               "https://github.com/muhammadgmalezzat/Listify-Todo-List"
             }
             reverse={false}
-          />
+          /> */}
 
-          <Project
+        {/* <Project
             projectLink={
               "https://muhammadgmalezzat.github.io/Stella-Orre-architecture/"
             }
@@ -198,9 +162,9 @@ const Projects = () => {
               "https://github.com/muhammadgmalezzat/Stella-Orre-architecture"
             }
             reverse={true}
-          />
+          /> */}
 
-          <Project
+        {/* <Project
             projectLink={
               "https://muhammadgmalezzat.github.io/fiction-website-/"
             }
@@ -214,9 +178,9 @@ const Projects = () => {
             youtubeLink={"https://youtu.be/8qwmMdzhCN0?si=Y-CDa1CBplfwAJwP"}
             githubLink={"https://github.com/muhammadgmalezzat/fiction-website-"}
             reverse={false}
-          />
+          /> */}
 
-          {/* <Project
+        {/* <Project
                     projectLink={"https://github.com/muhammadgmalezzat/My-Blog-website"}
                     imgSrc="/assets/images/blog.jpg"
                     imgAlt="blog website"
@@ -227,9 +191,9 @@ const Projects = () => {
                     githubLink={"https://github.com/muhammadgmalezzat/My-Blog-website"}
                     reverse={false}
                 /> */}
-        </div>
-      </section>
-    );
-}
+      </div>
+    </section>
+  );
+};
 
 export default Projects;

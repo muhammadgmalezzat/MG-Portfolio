@@ -115,6 +115,14 @@ const About = () => {
         </motion.div>
       </div>
 
+      <a href="https://mg-blog-sigma.vercel.app/" target="_blank">
+        <button
+          className={`w-52 h-14 text-sm border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300 ${styles.button}`}
+        >
+          Check out my Blog
+        </button>
+      </a>
+
       {/* Technical Focus */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

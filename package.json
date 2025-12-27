@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@types/react": "^17.0.85",
     "@types/react-dom": "^17.0.26",

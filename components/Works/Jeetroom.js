@@ -9,7 +9,7 @@ const Jeetroom = () => {
       transition={{ delay: 0.1 }}
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Frontend Developer{" "}
+        React Frontend Developer{" "}
         <span className="text-textGreen tracking-wide">@Jeetroom</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
@@ -20,28 +20,21 @@ const Jeetroom = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Developed responsive and modular UI components using React.js and MUI.
+          Built responsive UI components for property rental platform using
+          React.js and MUI.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Translated Figma-based designs into high-quality, pixel-perfect
-          interfaces.
+          Developed property listing filters, booking workflows, and user
+          dashboards from Figma designs.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Built core features such as property listings, advanced filters, and
-          user dashboards.
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          Participated in Agile sprints, task tracking via Jira, and optimized
-          performance across pages.
+          Contributed to Agile sprints and optimized frontend performance.
         </li>
       </ul>
     </motion.div>

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import {TiArrowForward} from 'react-icons/ti'
-const EnglishExpress = () => {
+import { TiArrowForward } from "react-icons/ti";
+
+
+const MakkahYard = () => {
   return (
     <motion.div
       className="w-full"
@@ -9,52 +11,50 @@ const EnglishExpress = () => {
       transition={{ delay: 0.1 }}
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Full-Stack Developer{" "}
-        <span className="text-textGreen tracking-wide">@English Express</span>
+        Software Engineer{" "}
+        <span className="text-textGreen tracking-wide">@Makkah Yard</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Apr 2025 – Present | Cairo, Egypt (Remote)
+        Aug 2025 – Present | Makkah, Saudi Arabia
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Built MongoDB assistant logs system tracking 10K+ correction
-          events/month with sub-50ms query performance using indexed queries and
-          pagination.
+          Integrated Mada, MasterCard, and Visa payment gateways, reducing
+          processing fees by 1.4% and saving ≈67K SAR annually.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Developed "Ask the Teacher" real-time Q&A module, increasing
-          student-teacher engagement by 60%.
+          Built automated renewal notifications (SMS, WhatsApp, email), reducing
+          manual follow-up by 80%.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Integrated Zoom API with secure token validation, blocking
-          unauthorized access and improving attendance accuracy by 40%.
+          Developed WhatsApp AI chatbot for subscription inquiries, cutting
+          customer support load by 40%.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Engineered secure PDF system (no screenshots, printing, or downloads)
-          with admin alerts, reducing cheating by 90%.
+          Built employee attendance system integrated with ZKTeco biometric
+          devices, tracking holidays and shifts per Saudi labor laws.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Integrated WhatsApp automation for class updates and parent reporting,
-          reducing manual work by 70%.
+          Added analytics dashboards that helped reduce absenteeism by 15%.
         </li>
       </ul>
     </motion.div>
   );
 };
 
-export default EnglishExpress;
+export default MakkahYard;

@@ -2,19 +2,20 @@ import SectionTitle from "@/components/SectionTitle";
 import Codsoft from "@/components/Works/Codsoft";
 import Jeetroom from "@/components/Works/Jeetroom";
 import EnglishExpress from "@/components/Works/EnglishExpress";
+import MakkahYard from "./Works/MakkahYard";  
 import { useState } from "react";
 
 const Experience = () => {
-  const [activeTab, setActiveTab] = useState("engexp");
+  const [activeTab, setActiveTab] = useState("makkahyard");
 
   const renderContent = () => {
     switch (activeTab) {
-      case "codsoft":
-        return <Codsoft />;
-      case "jeetroom":
-        return <Jeetroom />;
+      case "makkahyard":
+        return <MakkahYard />;
       case "engexp":
         return <EnglishExpress />;
+      case "jeetroom":
+        return <Jeetroom />;
       default:
         return null;
     }
@@ -25,9 +26,20 @@ const Experience = () => {
       id="experience"
       className="max-w-container mx-auto lgl:px-20 py-24"
     >
-      <SectionTitle title="Where I Have Worked" titlenumber="02." />
+      <SectionTitle title="Where I've Worked" titlenumber="01." />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex lgl:flex-col md:flex-col sm:flex-row">
+          <li
+            className={`${
+              activeTab === "makkahyard"
+                ? "border-l-textGreen text-textGreen"
+                : "text-textDark border-l-hoverColor"
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+            onClick={() => setActiveTab("makkahyard")}
+          >
+            Makkah Yard
+          </li>
+
           <li
             className={`${
               activeTab === "engexp"
@@ -48,17 +60,6 @@ const Experience = () => {
             onClick={() => setActiveTab("jeetroom")}
           >
             Jeetroom
-          </li>
-
-          <li
-            className={`${
-              activeTab === "codsoft"
-                ? "border-l-textGreen text-textGreen"
-                : "text-textDark border-l-hoverColor"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-            onClick={() => setActiveTab("codsoft")}
-          >
-            Codsoft
           </li>
         </ul>
         <div className="flex-1">{renderContent()}</div>
